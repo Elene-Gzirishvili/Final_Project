@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bureau of Poor Decisions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo" class="logo">
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#live-feed">Live Feed</a></li>
+                <li><a href="#form">Compliance</a></li>
+            </ul>
+        </nav>
+
+        <button class="burger-btn" id="burgerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+
+    <section id="home">
+        <div id="main-title">
+            <img src="./img/logo.png" alt="logo">
+            <H1>The Bureau of Poor Decisions</H1>
+            <h4>optimizing failure since yesterday</h4>
+        </div>
+        <div id="charter">
+            <h3>Mission Directive</h3>
+            <p>By authority of the Federal Act of Mismanagement, we handle the mistakes you haven't made yet. 
+                From texting your ex at 2 AM to impulse-buying kayaks, we provide the oversight you didn't ask for.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="services">
+    
+        <h2>Our Services Include</h2>
+
+        <div class="card">
+            <i class="fa-solid fa-scissors"></i>
+            <h3>Bad Haircut Tips</h3>
+            <p>Thinking about cutting your own bangs at 3 AM? We provide dull scissors and terrible lighting to ensure maximum regret.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-ghost"></i>
+            <h3>Ghosting Consultation</h3>
+            <p>Learn how to disappear from social obligations without explanation. Now offering advanced courses in "Leaving on Read."</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-hourglass-end"></i>
+            <h3>Procrastination Excuses</h3>
+            <p>Need a reason to delay that deadline? We generate believable lies about corrupted files, sudden illness, and wifi outages.</p>
+        </div>
+
+    </section>
+
+
+    <section id="live-feed" class="bureau-section">
+        <div class="section-header">
+            <i class="fa-solid fa-triangle-exclamation alert-icon"></i>
+            <h2>TERRIBLE ADVICE OF THE DAY</h2>
+            <h4>Department of Immediate Regret</h4>
+        </div>
+        <div class="feed-window">
+            <p id="advice-text">ESTABLISHING SECURE CONNECTION...</p>
+        </div>
+        <button class="stamp-btn" onclick="getBadAdvice()">AUTHORIZE NEW MISTAKE</button>
+    </section>
+
+
+    <section id="form" class="form-section">
+        <h2>Report Competent Behavior</h2>
+        <div class="separator-line"></div>
+        <p class="form-instruction">Know someone who has their life together? Report them immediately.</p>
+        <form id="sabotageForm" class="bureau-form">   
+            <div class="form-group">
+                <label for="suspectName">Suspect Name</label>
+                <input type="text" id="suspectName" placeholder="Who is succeeding?" autocomplete="off">
+                <span class="error-msg" id="nameError">Required</span>
+            </div>
+            <div class="form-group">
+                <label for="agentEmail">Your Agent Email</label>
+                <input type="text" id="agentEmail" placeholder="evidence@bureau.gov" autocomplete="off">
+                <span class="error-msg" id="emailError">Invalid Email Format</span>
+            </div>
+            <div class="form-group">
+                <label for="offense">The Offense</label>
+                <select id="offense">
+                    <option value="">-- Select Violation --</option>
+                    <option value="early">Woke up before 10 AM</option>
+                    <option value="salad">Ate a salad voluntarily</option>
+                    <option value="taxes">Filed taxes on time</option>
+                    <option value="happy">Looks generally happy</option>
+                </select>
+                <span class="error-msg" id="selectError">Required</span>
+            </div>
+            <div class="form-group">
+                <label for="accessCode">Sabotage Clearance Code</label>
+                <div class="password-wrapper">
+                    <input type="password" id="accessCode" placeholder="Enter Secret Key">
+                    <i class="fa-solid fa-eye" id="togglePassword"></i>
+                </div>
+                <span class="error-msg" id="passError">Required</span>
+            </div>
+            <button type="submit" class="submit-btn">INITIATE SABOTAGE</button>
+        </form>
+    </section>
+
+
+    <footer id="bureau-footer">
+        <div class="footer-content">
+            
+            <div class="footer-brand">
+                <img src="./img/logo.png" alt="Bureau Seal" class="footer-logo">
+                <h3>The Bureau of Poor Decisions</h3>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Complaints</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <p class="footer-copy">&copy; 2026 The Bureau. All rights reserved.</p>
+            <button id="scrollTopBtn" onclick="scrollToTop()">
+                <i class="fa-solid fa-arrow-up"></i> RETURN TO SURFACE
+            </button>
+        </div>
+    </footer>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to track your behavior.</p>
+        <button id="accept-cookies-btn">ACCEPT</button>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>
